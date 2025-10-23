@@ -1,72 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site super choque</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
-      <h1>Séries & Filmes Hubs</h1>
-      <p>Seu guia para o melhor do entreterimento</p>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#"> Início</a></li>
-        <li><a href="#"> Filmes</a></li>
-        <li><a href="#"> Séries</a></li>
-        <li><a href="#"> Lançamentos</a></li>
-        <li><a href="#"> Contato</a></li>
-      </ul>
+
+    <!--menu navegação-->
+    <nav class="navbar navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <button class="btn-menu" onclick="mostrarMenu()">
+          <img src="img/icon-hamburger-menu.png"
+          width="28"
+          height="28"
+          alt="menu"/>
+        </button>
+        <a class="navbar-brand mx-auto" href="#">
+          <img src="img/icone_tela_principal.jpeg" 
+          width="40"
+          height="40"
+          class="rounded-circle me-2"
+          alt="principal">
+        </a>
+      </div>
     </nav>
-    <div>
-      <aside>
-        <h2>Categorias</h2>
-        <ul>
-          <li class="categoria"><a href="#"> Ação</a></li>
-          <li class="categoria"><a href="#"> Comédia</a></li>
-          <li class="categoria"><a href="#"> Dramas</a></li>
-          <li class="categoria"><a href="#"> Ficção Científica</a></li>
-          <li class="categoria"><a href="#"> Terror</a></li>
-        </ul>
-      </aside>
-      <main>
-        <h2>Filmes em Destaque</h2>
-        <div class="filme-card">
-          <h3>Duna: Parte 3</h3><br>
-          <p>Anos após o reinado de César,.....</p>
+    
+    <!--secao principal-->
+    <header class="hero-section text-center text-white py-5">
+        <div class="container">
+            <img class= "hero-image rounded-circle mb-4" 
+             src="img/icone_tela_principal.jpeg" alt="icone" class="mb-3">
+            <h1 class="display-4 fw-bold">Super Shock</h1>
+            <p class="lead">O herói do eletromagnetismo</p>
+            <a href="#" class="btn btn-warning btn-lg">Saiba mais</a>
         </div>
-        <div class="filme-card">
-          <h3>Planeta dos Macacos: A volta dos que não foram</h3>
-          <p>Um novo mundo surge a partir.....</p>
-        </div>
+    </header>
 
-        <h2 class="serie-lista">Série Populares</h2>
-        <div class="serie-item">
-          <h3>The Last of Us</h3>
-          <p>Um sobrevivente endurecido....</p>
-        </div>
-        <div class="serie-item">
-          <h3>Suties</h3>
-          <p>Advogados que estão vivenciando....</p>
-        </div>
-      </main>
-      <aside>
-        <h2>Lançamentos</h2>    
-        <p>Veja o que está chegando em breve</p>
-        <ul>
-          <li><a href="#"> Missão Impossível 8</a></li>
-          <li><a href="#"> Gladiador 2</a></li>
-          <li><a href="#"> DeadPool</a></li>
-          <li><a href="#"> Forest Gump</a></li>
-          <li><a href="#"> Matrix 4</a></li>
-        </ul>
-      </aside>
+    <main>
+        <!--historia do desenho-->
+        <section class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="img/historia.jpg" alt="historia" class="img-fluid rounded">                       
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="text-primary">História do Desenho</h2>
+                        <p>O Super Choque - ou Static, como é originalmente conhecido - é um desenho animado produzido pela Milestone, Warner Bros e DC Comics que teve um grande sucesso na década de 2000 e 2010.</p>
+                        <p>Seu criador, Dwayne Glenn McDuffie, foi um escritor e editor da Marvel, porém, acabou se retirando da empresa por conta de não se sentir confortável com a forma que a produtora tratava seus super heróis negros.</p>
+                        <p class="text-muted">
+                            <small>Fonte: Observatório do Cinema</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--historia do personagem-->
+        <section class="py-5 bg-dark text-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- imagem primeiro -->
+                    <div class="col-md-6 order-md-2">
+                        <img src="img/historia2.jpg" alt="historia personagem" class="img-fluid rounded">                       
+                    </div>
+                    <!-- texto ao lado -->
+                    <div class="col-md-6 order-md-1">
+                        <h2 class="text-primary">História do Personagem</h2>
+                        <p>Virgil Ovid Hawkins (Super Shock) é um jovem negro, nascido e criado na cidade de Dakota City. Ele era um garoto com poucos amigos, bastante inteligente e que tinha muito interesse em quadrinhos e RPG's.</p> 
+                        <p>O que fazia com que ele se enquadrasse no clássico estereótipo de nerd. Na escola, o garoto sofria muito bullying, e buscando se proteger e se vingar daqueles que lhe faziam mal, Virgil buscou ajuda com gangues. Porém, ao chegar no local combinado para encontrar os criminosos, ele se deparou com uma briga entre “facções” (que na verdade era uma emboscada da polícia).</p>
+                        <p class="text-muted">
+                            <small>Fonte: Observatório do Cinema</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!--curiosidades-->
+        <section class="py-5 bg-light">
+             <div class="container">
+                <div class="row align-items-center">
+      <!-- imagem à esquerda --> <div class="col-md-6 order-md-1">
+        <img src="img/curiosidades.jpeg" alt="curiosidades" class="img-fluid rounded">                       
+      </div>
+      <!-- texto à direita -->
+      <div class="col-md-6 order-md-2">
+        <h2 class="text-primary">Curiosidades</h2>
+        <ol>
+        <li>O nome é uma homenagem ao advogado Virgil Darnell Hawkins</li>
+        <li>Foi inspirado no Homem-Aranha da Marvel</li>
+        <li>Já integrou a Liga da Justiça em episódio especial</li>  
+        <li>Usa habilidades de skate para se locomover com seus poderes</li>
+         </ol>
+        <p class="text-muted">
+          <small>Fonte: Legião dos Heróis</small>
+        </p>
+      </div>
     </div>
+  </div>
+</section>
 
-    <footer>
-      <p>&COPY; 2025 & Filmes Hubs. Todos os Direitos Reservados</p>
-    </footer>
+<!--super poderes-->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- texto à esquerda -->
+      <div class="col-md-6 order-md-1">
+        <h2 class="text-primary">Super poderes</h2>
+        <p>
+          Os poderes se baseiam na eletricidade e eletromagnetismo:
+        </p>
+        <div class="row">
+          <div class="col-6">
+            <ul>
+              <li>Campos magnéticos</li>
+              <li>Controle elétrico</li>
+              <li>Levitação de metais</li>  
+              <li>Ondas de rádio</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Raios elétricos</li>
+              <li>Bolas de energia</li>
+              <li>Magnetização</li>  
+              <li>Energia pura</li>
+              <li>Intelecto genial</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-muted">
+          <small>Fonte: NerdBox</small>
+        </p>
+      </div>
+<!-- imagem à direita -->
+      <div class="col-md-6 order-md-2">
+        <img src="img/super_poder.jpeg" alt="curiosidades" class="img-fluid rounded">                       
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <footer class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">Projeto desenvolvimento WEB-1 = site super Shock &copy; 2025</p>
+        </div>
+</footer>
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
